@@ -1,0 +1,30 @@
+#lg{
+    color: #004AAD;
+    text-align: center;
+    padding: 10px;
+    font-weight: bold;
+
+}
+.soc{
+    margin: 2% 20% ; 
+}
+.lg-parent{
+    background-color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin: 3% 10% 10% 10% ;
+    border-radius: 10px;
+}
+.grand-parent{
+    /* margin: 10px; */
+    background-image: url("/src/assets/img/pexels-expect-best-323705.png");
+}
+/* -------------------responsive---------------------------- */
+@media (max-width: 700px) {
+    .soc {
+        margin: auto;
+    }
+    .lg-parent{
+        padding: 10px;
+    }
+}

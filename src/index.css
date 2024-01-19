@@ -1,0 +1,111 @@
+/* @import url('https://fonts.googleapis.com/css?family=Montserrat'); */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  margin: 2;
+  background: #f1f8ff;
+  font-family: -apple-system, BlinkMacSystemFont, 'Montserrat', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.main {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+
+video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  top: -122px;
+  left: 0;
+  position: relative;
+  z-index: -2;
+}
+
+.content {
+  position: absolute;
+  width: 35%;
+  height: 100%;
+  top: 6em;
+  left: 12em;
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  align-items: left;
+  color: white;
+}
+
+@media only screen and (max-width: 768px) {
+  .content { 
+    position: absolute; /* ou utiliser une autre valeur appropriée selon votre mise en page */
+    width: 100%; /* Ajuster la largeur en fonction de vos besoins */
+    left: 0;
+    top: 0;
+  }
+}
+
+.overlay { /* deprecated ! en rapport avec la vidéo [?} */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,.1);
+  z-index: 5;
+  /* background-color: #000000cc; */
+}
+
+.homepageTitle /* Faites comme lui... alternance */ {
+  -webkit-text-stroke: 2px black;
+  font-weight: 800;
+  letter-spacing: -2px;
+}
+
+.input { /* forms */
+  margin: 10px;
+  border-radius: 90px;
+  text-align: center;
+  border: solid 2px black;
+  padding: 5px;
+  min-width: 250px;
+  min-height: 38px;
+}
+
+#wttkwskii { /* valider en bleu */
+  size: 12px;
+  background: linear-gradient(to right, #57D7E2, #0451B0);
+  border: solid 2px black;
+  color: white
+
+}
+
+.navbar {
+  transition: all 0.5s;
+}
+
+/* navbar Scrolled */
+.navbar-scrolled {
+  background-color: rgb(240, 240, 240);
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* footer */

@@ -1,0 +1,74 @@
+
+.cards {
+  width: 30%;
+  text-align: center;
+}
+.contain {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.cards #pic-absolute {
+  border-radius: 50%;
+  width: 140px;
+  position: relative;
+}
+
+.cards #pic-absolute img {
+  width: 150px;
+  position: relative;
+}
+.cards #pic-absolute h1 {
+  position: absolute;
+  top: -15px;
+  right:10px;
+  background-color: #10585c;
+  color: rgb(255, 255, 255);
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#cards-parent {
+  display: flex;
+  justify-content: space-around;
+  gap: 2.4em;
+  flex-wrap: wrap;
+  
+}
+.cards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#etapes {
+  text-align: center; 
+  margin: 0px 0px 80px 0px;   
+  
+}
+#p1{
+  color: #10585c;
+  font-weight: bold;
+}
+.cards-grand{
+  margin: -100px 10px 50px 10px ;
+}
+/* --------------------responsive------------------------------------ */
+@media (max-width: 700px) {
+.cards {
+  width: 100%; /* Occupe 100% de la largeur de l'écran */
+  margin: 10px 0; /* Espacement entre les cartes */
+}
+
+#cards-parent {
+  flex-direction: column; /* Empilez les cartes verticalement */
+  align-items: center; /* Centrez horizontalement les cartes */
+}
+
+#etapes {
+  margin: 20px 0; /* Ajustez la marge autour du titre */
+}
+}
